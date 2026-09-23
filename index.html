@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- On-Page Metadata: Optimized Local & Clinical SEO -->
+    <title>Oakstone Psychiatry - Mental Health Service - Oakstone Psychiatric Practice</title>
+    <meta name="description" content="Board-certified psychiatric care in Visalia & Central Valley Oakstone">
+    
+    <!-- Preconnect to Third-Party Domains -->
+    <link rel="preconnect" href="https://app.hipaatizer.com">
+    <link rel="preconnect" href="https://maps.google.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Load Google Fonts: Cinzel, Cormorant Garamond, Plus Jakarta Sans -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Schema Markup: MedicalBusiness Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Oakstone Psychiatric Practice",
+      "alternateName": "Oakstone Psychiatry",
+      "image": "https://www.oakstonepsychiatric.com/Photos/logo-dark.jpg",
+      "logo": "https://www.oakstonepsychiatric.com/Photos/logo-dark.jpg",
+      "@id": "https://www.oakstonepsychiatric.com/#medical-practice",
+      "url": "https://www.oakstonepsychiatric.com",
+      "telephone": "+1-559-258-1644",
+      "faxNumber": "+1-559-258-1624",
+      "priceRange": "$$",
+      "medicalSpecialty": [
+        "Psychiatric",
+        "Pediatric"
+      ],
+      "knowsAbout": [
+        "Child and Adolescent Psychiatry",
+        "Adult Psychiatry",
+        "Medication Management",
+        "ADHD",
+        "Anxiety Disorders",
+        "Depression",
+        "Men's Mental Health"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3435 South Demaree Ave, Ste C",
+        "addressLocality": "Visalia",
+        "addressRegion": "CA",
+        "postalCode": "93277",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 36.301323,
+        "longitude": -119.313460
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-559-258-1644",
+        "contactType": "customer service",
+        "areaServed": "US",
+        "availableLanguage": "en"
+      }
+    }
+    </script>
+    
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Load Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    
+    <style>
+        ::selection {
+            background-color: #C5A059;
+            color: #0D0B08;
+        }
+        body {
+            background-color: #0A0806;
+            color: #E0D8C3;
+            font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+        }
+        .font-brand-serif {
+            font-family: 'Cormorant Garamond', Georgia, serif;
+        }
+        .font-cinzel {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Gold and Thistle Metallic Colors */
+        .text-gold-metallic {
+            color: #D4AF37;
+            background: linear-gradient(135deg, #F3E5AB 0%, #C5A059 50%, #9A7B38 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gold-subtle {
+            color: #C5A059;
+        }
+        .text-thistle-purple {
+            color: #B388B7;
+        }
+        .text-thistle-light {
+            color: #D8B4DB;
+        }
+        .bg-espresso-card {
+            background-color: #14100C;
+            background-image: linear-gradient(145deg, rgba(28, 22, 17, 0.9) 0%, rgba(15, 12, 9, 0.95) 100%);
+        }
+        .bg-espresso-dark {
+            background-color: #0A0806;
+        }
+
+        /* Flowing Organic Dark Wood Grain Texture for Bio Cards */
+        .bg-dark-wood {
+            background-color: #120A04;
+            background-image: 
+                /* Warm satin sheen spotlight overlay */
+                radial-gradient(ellipse at 35% 15%, rgba(168, 112, 60, 0.24) 0%, transparent 65%),
+                /* Organic micro-fiber turbulence with organic distortion */
+                url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Cfilter id='flowingGrain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.004 0.035' numOctaves='5' result='noise'/%3E%3CfeColorMatrix type='matrix' values='0.22 0 0 0 0.12  0.14 0 0 0 0.07  0.07 0 0 0 0.03  0 0 0 0.28 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23flowingGrain)'/%3E%3C/svg%3E"),
+                /* Multi-angle parabolic & S-curve radial grain sweeps */
+                repeating-radial-gradient(ellipse 140% 70% at 10% -20%, rgba(82, 50, 26, 0.45) 0px, rgba(16, 9, 4, 0.6) 2px, rgba(58, 35, 18, 0.38) 4px, rgba(10, 5, 2, 0.75) 6px),
+                repeating-radial-gradient(ellipse 110% 180% at 110% 120%, rgba(70, 42, 22, 0.38) 0px, transparent 2.5px, rgba(32, 18, 8, 0.45) 5px),
+                repeating-radial-gradient(ellipse 200% 90% at -30% 110%, rgba(60, 36, 18, 0.3) 0px, transparent 3px, rgba(18, 9, 4, 0.4) 6px),
+                /* Deep dark espresso base tint */
+                linear-gradient(135deg, #1C120A 0%, #0E0803 55%, #180F08 100%);
+            box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.92), 0 20px 35px -10px rgba(0, 0, 0, 0.85);
+        }
+
+        .border-gold-subtle {
+            border-color: rgba(197, 160, 89, 0.25);
+        }
+        .border-gold-medium {
+            border-color: rgba(197, 160, 89, 0.45);
+        }
+        .gold-divider-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent 0%, rgba(197, 160, 89, 0.5) 50%, transparent 100%);
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fadeIn {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+        
+        /* Card Hover Scale and Border Glow Transitions */
+        .card-expand-hover {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+        }
+        .card-expand-hover:hover {
+            transform: translateY(-8px) scale(1.03);
+            border-color: rgba(197, 160, 89, 0.8);
+            box-shadow: 0 20px 40px -10px rgba(197, 160, 89, 0.25), 0 0 20px rgba(179, 136, 183, 0.15);
+        }
+
+        .zoom-img {
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .zoom-container:hover .zoom-img {
+            transform: scale(1.05);
+        }
+    </style>
+
+    <!-- Google Tag Manager -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-73H75LV6FZ"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-73H75LV6FZ');
+    </script>
+</head>
+<body class="min-h-screen antialiased selection:bg-[#C5A059] selection:text-[#0D0B08]">
+    
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 w-full bg-[#0D0B08]/92 backdrop-blur-md z-50 border-b border-[#C5A059]/20 shadow-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-24">
+                <!-- Dark Theme Brand Logo -->
+                <a href="#" class="flex-shrink-0 flex items-center cursor-pointer group">
+                    <img 
+                        src="Photos/logo-dark.jpg" 
+                        alt="Oakstone Psychiatry Logo" 
+                        class="h-16 md:h-20 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+                        width="200"
+                        height="80"
+                        onerror="this.onerror=null; this.src='Photos/logo.jpg';"
+                    >
+                    <span class="hidden sm:block ml-3 text-lg md:text-xl font-cinzel text-amber-100 font-semibold tracking-wider leading-snug">
+                        Oakstone <br class="hidden lg:block xl:hidden" /><span class="text-xs font-normal tracking-widest text-[#C5A059] block uppercase">Psychiatric Practice</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation Menu -->
+                <div class="hidden md:flex items-center xl:space-x-8 lg:space-x-4 space-x-3 text-xs xl:text-sm tracking-wider font-cinzel">
+                    <a href="#about" class="text-amber-100/80 hover:text-[#C5A059] transition-colors whitespace-nowrap">Our Practice</a>
+                    <a href="#providers" class="text-amber-100/80 hover:text-[#C5A059] transition-colors whitespace-nowrap">Clinical Team</a>
+                    <a href="#contact" class="text-amber-100/80 hover:text-[#C5A059] transition-colors whitespace-nowrap">Our Office</a>
+                    <a href="#contact" class="text-amber-100/80 hover:text-[#C5A059] transition-colors whitespace-nowrap">Contact</a>
+                    <a href="#request-appointment" class="bg-gradient-to-r from-[#C5A059] to-[#9A7B38] text-[#0D0B08] px-6 py-2.5 rounded-full font-bold hover:brightness-110 transition-all shadow-lg hover:shadow-[#C5A059]/20 whitespace-nowrap">
+                        Request Appointment
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Icon Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-[#C5A059] hover:text-white focus:outline-none p-2" aria-label="Toggle navigation menu">
+                        <i data-lucide="menu" id="menu-icon-open" class="h-7 w-7"></i>
+                        <i data-lucide="x" id="menu-icon-close" class="h-7 w-7 hidden"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#14100C] border-t border-[#C5A059]/20 px-4 pt-4 pb-6 space-y-3 shadow-2xl">
+            <a href="#about" class="mobile-link block px-3 py-2 text-base font-cinzel text-amber-100 hover:text-[#C5A059] hover:bg-white/5 rounded-lg">Our Practice</a>
+            <a href="#providers" class="mobile-link block px-3 py-2 text-base font-cinzel text-amber-100 hover:text-[#C5A059] hover:bg-white/5 rounded-lg">Clinical Team</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 text-base font-cinzel text-amber-100 hover:text-[#C5A059] hover:bg-white/5 rounded-lg">Our Office</a>
+            <a href="#contact" class="mobile-link block px-3 py-2 text-base font-cinzel text-amber-100 hover:text-[#C5A059] hover:bg-white/5 rounded-lg">Contact</a>
+            <div class="pt-2">
+                <a href="#request-appointment" class="mobile-link block w-full text-center bg-gradient-to-r from-[#C5A059] to-[#9A7B38] text-[#0D0B08] px-5 py-3 rounded-full font-bold">
+                    Request Appointment
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section featuring Welcome to Oakstone Centerpiece -->
+    <section class="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto relative text-center">
+        
+        <!-- Accessible Heading for SEO -->
+        <h1 class="sr-only">Oakstone Psychiatric Practice</h1>
+
+        <!-- Top Hero Grid: Welcome Artwork + Right Text Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16 text-center lg:text-left">
+            <!-- Welcome Artwork Showcase Card (opp-welcome_2.jpg) -->
+            <div class="lg:col-span-5 w-full max-w-lg mx-auto lg:mx-0 group">
+                <div class="bg-espresso-card rounded-[2.5rem] p-3 border border-gold-medium shadow-2xl relative overflow-hidden transition-all duration-500 hover:border-[#C5A059] hover:shadow-[#C5A059]/20">
+                    <div class="rounded-[2rem] overflow-hidden bg-[#0D0B08] relative">
+                        <img 
+                            src="Photos/opp-welcome_2.jpg" 
+                            alt="Welcome to Oakstone Psychiatric Practice" 
+                            class="w-full h-auto object-cover object-center group-hover:scale-102 transition-transform duration-700"
+                            loading="eager"
+                            onerror="this.onerror=null; this.src='Photos/logo-dark.jpg';"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Tagline, Description & Action Buttons -->
+            <div class="lg:col-span-7 flex flex-col justify-center">
+                <!-- Tagline Motto -->
+                <p class="text-2xl sm:text-3xl lg:text-4xl font-brand-serif italic text-amber-100/90 mb-6 leading-relaxed">
+                    "Rooted in Compassion. Grounded in Expertise."
+                </p>
+
+                <!-- Sub-description -->
+                <p class="text-base sm:text-lg text-amber-100/75 mb-8 leading-relaxed font-light">
+                    Delivering comprehensive, evidence-based psychiatric care across all stages of life—adults, adolescents, and children—in Visalia and California's Central Valley.
+                </p>
+                
+                <!-- Action Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center">
+                    <a href="#request-appointment" class="w-full sm:w-auto bg-gradient-to-r from-[#C5A059] via-[#E6CA65] to-[#9A7B38] text-[#0D0B08] px-8 py-4 rounded-full font-bold hover:brightness-110 transition-all text-center shadow-xl text-xs sm:text-sm tracking-wider font-cinzel uppercase">
+                        Book a Consultation
+                    </a>
+                    <a href="#about" class="w-full sm:w-auto bg-transparent text-amber-200 border border-[#C5A059]/50 px-8 py-4 rounded-full font-cinzel text-xs uppercase tracking-widest hover:bg-[#C5A059]/10 transition-all text-center">
+                        Learn Our Approach
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Hero Group Photo Banner -->
+        <div class="relative rounded-[2.5rem] overflow-hidden border border-[#C5A059]/30 shadow-2xl group">
+            <div class="aspect-[4/3] sm:aspect-[16/10] md:aspect-[16/10] bg-[#14100C] relative">
+                <img 
+                    src="Photos/team-group-exterior.jpg" 
+                    alt="Oakstone Psychiatric Practice Team" 
+                    class="w-full h-full object-cover object-top brightness-90 group-hover:scale-102 transition-transform duration-700"
+                    loading="eager"
+                    onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=1200';"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-[#0D0B08] via-[#0D0B08]/40 to-transparent"></div>
+                <div class="absolute bottom-6 left-6 right-6 text-left flex flex-col md:flex-row md:items-end justify-between gap-4 z-10">
+                    <div>
+                        <span class="inline-block px-3.5 py-1 bg-[#14100C]/80 backdrop-blur-md rounded-full text-xs font-cinzel tracking-widest text-[#C5A059] uppercase mb-2 border border-[#C5A059]/30">
+                            Our Dedicated Team
+                        </span>
+                        <p class="text-lg md:text-2xl font-brand-serif font-medium text-amber-100 drop-shadow-md">
+                            Providing compassionate, patient-centered care in a serene and welcoming environment.
+                        </p>
+                    </div>
+                    <a href="#providers" class="inline-flex items-center text-xs font-cinzel tracking-widest uppercase font-bold bg-[#C5A059] text-[#0D0B08] px-6 py-3 rounded-full hover:bg-amber-300 transition-all whitespace-nowrap self-start md:self-auto shadow-lg">
+                        Meet Clinical Team <i data-lucide="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Practice Overview Section -->
+    <section id="about" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-[#C5A059]/20">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+            
+            <div class="order-2 lg:order-1 lg:col-span-7">
+                <div class="flex items-center gap-2 mb-3">
+                    <span class="text-xs font-cinzel tracking-widest text-[#C5A059] uppercase">Our Practice Overview</span>
+                </div>
+                <h2 class="text-3xl sm:text-5xl font-cinzel text-amber-100 leading-tight mb-6">
+                    Rooted in Compassion. <br />
+                    <span class="text-thistle-purple font-brand-serif italic font-normal text-3xl sm:text-4xl">Grounded in Expertise.</span>
+                </h2>
+                
+                <div class="space-y-5 text-amber-100/80 text-base md:text-lg leading-relaxed font-light">
+                    <p>
+                        Founded by a board-certified psychiatrist who has cared for patients and families throughout Visalia and California's Central Valley for more than a decade, Oakstone Psychiatric Practice combines academic expertise with personalized, compassionate care.
+                    </p>
+                    <p>
+                        At Oakstone Psychiatric Practice, we believe exceptional psychiatric care begins with clinical excellence, thoughtful relationships, and an unwavering commitment to doing what is right for every patient.
+                    </p>
+
+                    <!-- Expandable Additional Paragraphs -->
+                    <div id="overview-expanded-text" class="hidden space-y-5 pt-1 animate-fadeIn">
+                        <p>
+                            Our practice provides comprehensive psychiatric care for patients of all ages, including adults, adolescents, and children throughout Visalia and the Central Valley. We combine the latest advances in psychiatric medicine with individualized treatment, recognizing that every person's story, goals, and needs are unique at every stage of life.
+                        </p>
+                        <p>
+                            Our physicians and clinicians provide comprehensive psychiatric evaluations, medication management, and personalized treatment for a broad range of mental health conditions, including depression, anxiety, ADHD, bipolar disorder, trauma-related disorders, obsessive-compulsive disorder, and substance use disorders.
+                        </p>
+                        <p>
+                            At Oakstone, we take the time to understand each patient as a whole person, building trusted relationships that support meaningful, lasting improvement. Every recommendation is guided by scientific evidence, clinical judgment, and genuine compassion.
+                        </p>
+                    </div>
+
+                    <!-- Interactive Read More / Read Less Toggle Button -->
+                    <button id="overview-toggle-btn" onclick="toggleOverviewText()" class="inline-flex items-center gap-2 text-xs font-cinzel tracking-widest text-[#C5A059] uppercase border border-[#C5A059]/40 bg-[#C5A059]/10 px-5 py-2.5 rounded-full hover:bg-[#C5A059]/20 hover:border-[#C5A059] transition-all cursor-pointer focus:outline-none shadow-md mt-3">
+                        <span id="overview-toggle-text">Read Full Overview</span>
+                        <i data-lucide="chevron-down" id="overview-toggle-icon" class="w-4 h-4 transition-transform duration-300"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Emblem Tree Logo Box -->
+            <div class="order-1 lg:order-2 w-full flex items-center justify-center p-2 lg:col-span-5">
+                <div class="w-full bg-espresso-card rounded-[2.5rem] shadow-2xl border border-gold-medium p-6 sm:p-8 flex flex-col items-center justify-center text-center relative overflow-hidden">
+                    <div class="absolute -top-12 -right-12 w-32 h-32 bg-[#8B5A91]/20 rounded-full blur-2xl"></div>
+                    
+                    <!-- Seamless Tree Logo Display (No Inner Border Line, Non-expanding) -->
+                    <div class="w-full max-w-xs md:max-w-sm rounded-2xl overflow-hidden bg-[#0A0806] flex items-center justify-center">
+                        <img 
+                            src="Photos/logo.jpg" 
+                            alt="Oakstone Psychiatric Practice Emblem" 
+                            class="w-full h-auto object-contain mix-blend-screen block pointer-events-none"
+                            width="500"
+                            height="500"
+                            onerror="this.onerror=null; this.src='Photos/logo-dark.jpg';"
+                        >
+                    </div>
+
+                    <div class="mt-6 pt-4 border-t border-gold-subtle w-full flex items-center justify-center gap-2">
+                        <span class="text-[#C5A059] text-xs">◆</span>
+                        <p class="text-xs text-amber-200 font-cinzel tracking-wider">Integrity • Compassion • Excellence</p>
+                        <span class="text-[#C5A059] text-xs">◆</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pillar Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
+            <!-- Pillar Card 1 -->
+            <div class="bg-espresso-card p-8 rounded-3xl border border-gold-subtle shadow-xl hover:border-gold-medium transition-all">
+                <div class="w-12 h-12 rounded-2xl bg-[#C5A059]/15 border border-[#C5A059]/30 flex items-center justify-center text-[#C5A059] mb-6 shadow-md">
+                    <i data-lucide="shield" class="w-6 h-6"></i>
+                </div>
+                <h4 class="text-xl font-cinzel font-bold text-amber-100 mb-3">Evidence-Based Medicine</h4>
+                <p class="text-amber-100/70 leading-relaxed text-sm font-light">Our treatment recommendations are grounded in the latest psychiatric research, established clinical guidelines, and years of physician expertise.</p>
+            </div>
+            
+            <!-- Pillar Card 2 -->
+            <div class="bg-espresso-card p-8 rounded-3xl border border-gold-subtle shadow-xl hover:border-gold-medium transition-all">
+                <div class="w-12 h-12 rounded-2xl bg-[#B388B7]/15 border border-[#B388B7]/30 flex items-center justify-center text-thistle-purple mb-6 shadow-md">
+                    <i data-lucide="user" class="w-6 h-6"></i>
+                </div>
+                <h4 class="text-xl font-cinzel font-bold text-amber-100 mb-3">Personalized Care</h4>
+                <p class="text-amber-100/70 leading-relaxed text-sm font-light">Every treatment plan is thoughtfully tailored to the individual, recognizing that exceptional outcomes begin with understanding each patient's unique circumstances.</p>
+            </div>
+
+            <!-- Pillar Card 3 -->
+            <div class="bg-espresso-card p-8 rounded-3xl border border-gold-subtle shadow-xl hover:border-gold-medium transition-all">
+                <div class="w-12 h-12 rounded-2xl bg-[#C5A059]/15 border border-[#C5A059]/30 flex items-center justify-center text-[#C5A059] mb-6 shadow-md">
+                    <i data-lucide="heart" class="w-6 h-6"></i>
+                </div>
+                <h4 class="text-xl font-cinzel font-bold text-amber-100 mb-3">Comprehensive Care</h4>
+                <p class="text-amber-100/70 leading-relaxed text-sm font-light">From childhood through adulthood, we provide coordinated psychiatric services, partnering with families and primary care physicians for whole-person health.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinical Team Section -->
+    <section id="providers" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-[#C5A059]/20 scroll-mt-24">
+        <div class="mb-14 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-4">
+            <div>
+                <div class="flex items-center justify-center md:justify-start gap-2 mb-2">
+                    <span class="text-xs font-cinzel tracking-widest text-[#C5A059] uppercase">Expert Clinical Leadership</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl font-cinzel font-bold text-amber-100 tracking-wide">
+                    Our Co-founders
+                </h2>
+            </div>
+            <p class="text-amber-100/70 max-w-md text-sm leading-relaxed font-light">
+                Our board-certified specialists and experienced clinical staff work collaboratively to provide empathetic, high-quality care across all ages.
+            </p>
+        </div>
+
+        <!-- Featured Co-founders Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-20">
+            <!-- Co-founder 1: Dr. Cory Daniel Jaques -->
+            <div class="bg-dark-wood rounded-[2.5rem] shadow-2xl overflow-hidden border border-gold-medium flex flex-col h-full hover:border-[#C5A059] transition-all">
+                <div class="aspect-[4/3] bg-black/40 overflow-hidden zoom-container relative">
+                    <img 
+                        src="Photos/cory-jaques.jpg" 
+                        alt="Cory Daniel Jaques, M.D." 
+                        class="w-full h-full object-cover object-top zoom-img brightness-95"
+                        loading="lazy"
+                        onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&q=80&w=600';"
+                    >
+                    <div class="absolute bottom-3 right-3 bg-[#0D0B08]/90 backdrop-blur-md px-4 py-1 rounded-full text-xs font-cinzel font-bold text-[#C5A059] border border-[#C5A059]/40">
+                        Medical Director & Co-founder
+                    </div>
+                </div>
+                <div class="p-8 md:p-10 flex flex-col flex-grow">
+                    <h3 class="text-3xl font-brand-serif font-bold text-amber-100 mb-1">Cory Daniel Jaques, M.D.</h3>
+                    <p class="text-xs font-cinzel tracking-widest text-thistle-purple uppercase mb-6 leading-relaxed">Board-Certified Adult, Child & Adolescent Psychiatrist</p>
+                    
+                    <div class="text-amber-100/75 space-y-4 text-sm leading-relaxed flex-grow font-light">
+                        <p>
+                            Dr. Cory Daniel Jaques is the co-founder and Medical Director of Oakstone Psychiatric Practice, where he leads a team of dedicated psychiatric clinicians committed to delivering exceptional, evidence-based mental health care throughout Visalia and California's Central Valley.
+                        </p>
+                        <p>
+                            After earning his medical degree from the University of Minnesota Medical School, Dr. Jaques completed both his General Psychiatry Residency and Child & Adolescent Psychiatry Fellowship at the UCLA Semel Institute for Neuroscience and Human Behavior, one of the nation's leading centers for psychiatric education and research.
+                        </p>
+                        <p>
+                            For more than a decade, Dr. Jaques has provided psychiatric care to children, adolescents, and adults across the Central Valley. In addition to leading Oakstone Psychiatric Practice, he serves as Program Director of the Child & Adolescent Psychiatry Fellowship and Medical Director of the Youth Crisis Stabilization Unit.
+                        </p>
+                        <p>
+                            Dr. Jaques believes the best psychiatric care is built on thoughtful evaluation, genuine human connection, and individualized treatment.
+                        </p>
+                    </div>                
+                </div>
+            </div>
+
+            <!-- Co-founder 2: April Ortiz -->
+            <div class="bg-dark-wood rounded-[2.5rem] shadow-2xl overflow-hidden border border-gold-medium flex flex-col h-full hover:border-[#C5A059] transition-all">
+                <div class="aspect-[4/3] bg-black/40 overflow-hidden zoom-container relative">
+                    <img 
+                        src="Photos/april-ortiz.jpg" 
+                        alt="April Ortiz, PMHNP-BC" 
+                        class="w-full h-full object-cover object-top zoom-img brightness-95"
+                        loading="lazy"
+                        onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1594824436998-d8eb62f51122?auto=format&fit=crop&q=80&w=600';"
+                    >
+                    <div class="absolute bottom-3 right-3 bg-[#0D0B08]/90 backdrop-blur-md px-4 py-1 rounded-full text-xs font-cinzel font-bold text-[#C5A059] border border-[#C5A059]/40">
+                        Co-founder
+                    </div>
+                </div>
+                <div class="p-8 md:p-10 flex flex-col flex-grow">
+                    <h3 class="text-3xl font-brand-serif font-bold text-amber-100 mb-1">April Ortiz, PMHNP-BC</h3>
+                    <p class="text-xs font-cinzel tracking-widest text-thistle-purple uppercase mb-6 leading-relaxed">Board-Certified Psychiatric Mental Health Nurse Practitioner</p>
+                    
+                    <div class="text-amber-100/75 space-y-4 text-sm leading-relaxed flex-grow font-light">
+                        <p>
+                            April Ortiz is a co-founder and board-certified Psychiatric Mental Health Nurse Practitioner at Oakstone Psychiatric Practice with many years of experience providing compassionate, evidence-based psychiatric care across Visalia and the Central Valley.
+                        </p>
+                        <p>
+                            At Oakstone, April provides comprehensive psychiatric evaluations, medication management, and individualized treatment across the lifespan for adults, adolescents, and children experiencing a wide range of mental health conditions.
+                        </p>
+                        <p>
+                            Working closely with Dr. Cory Daniel Jaques, April practices within the clinical philosophy that defines Oakstone: delivering personalized, ethical, and evidence-based psychiatric care with professionalism, compassion, and respect.
+                        </p>
+                        <p>
+                            April is passionate about helping patients and families navigate life's challenges with confidence, resilience, and hope, creating a welcoming environment where every patient feels heard and respected.
+                        </p>
+                    </div>                
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Team & Staff Members Showcase -->
+        <div class="bg-espresso-card rounded-[2.5rem] p-8 md:p-12 border border-gold-subtle shadow-2xl">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h4 class="text-2xl sm:text-3xl font-cinzel text-amber-100 font-bold mb-2">Clinical & Administrative Team</h4>
+                <p class="text-sm text-amber-100/70 font-light">
+                    Our supportive care team is dedicated to providing warm, professional, and seamless support at every stage of your care.
+                </p>
+            </div>
+
+            <!-- Team Cards Grid (Flor) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Team Member 1: STAFF -->
+                <div class="bg-dark-wood rounded-3xl p-6 sm:p-8 border border-gold-medium shadow-xl flex flex-col items-center md:items-start text-center md:text-left h-full">
+                    <div class="w-32 h-32 sm:w-36 sm:h-36 rounded-2xl overflow-hidden mb-5 border-2 border-[#C5A059]/30 bg-black/40 flex-shrink-0 shadow-md">
+                        <img 
+                            src="Photos/STAFF.jpg" 
+                            alt="STAFF" 
+                            class="w-full h-full object-cover object-top"
+                            loading="lazy"
+                            onerror="this.onerror=null; this.src='https://placehold.co/300x300/14100C/C5A059?text=Update Coming Soon';"
+                        />
+                    </div>
+                    <h5 class="font-brand-serif text-2xl text-amber-100 font-bold mb-1">STAFF</h5>
+                    <p class="text-xs font-cinzel tracking-widest text-thistle-purple uppercase mb-4 leading-relaxed">Board-Certified Psychiatric-Mental Health Practitioner</p>
+                    <p class="text-sm text-amber-100/75 leading-relaxed font-light">
+                        
+                    </p>
+                </div>
+
+                <!-- Team Member 2: Flor Santos -->
+                <div class="bg-dark-wood rounded-3xl p-6 sm:p-8 border border-gold-medium shadow-xl flex flex-col items-center md:items-start text-center md:text-left h-full">
+                    <div class="w-32 h-32 sm:w-36 sm:h-36 rounded-2xl overflow-hidden mb-5 border-2 border-[#C5A059]/30 bg-black/40 flex-shrink-0 shadow-md">
+                        <img 
+                            src="Photos/flor.jpg" 
+                            alt="Flor Santos" 
+                            class="w-full h-full object-cover object-top"
+                            loading="lazy"
+                            onerror="this.onerror=null; this.src='https://placehold.co/300x300/14100C/C5A059?text=Flor+Santos';"
+                        />
+                    </div>
+                    <h5 class="font-brand-serif text-2xl text-amber-100 font-bold mb-1">Flor Santos</h5>
+                    <p class="text-xs font-cinzel tracking-widest text-thistle-purple uppercase mb-4 leading-relaxed">Certified Medical Assistant, Office Manager & Patient Care Specialist</p>
+                    <p class="text-sm text-amber-100/75 leading-relaxed font-light">
+                        Flor Santos serves as Office Manager, Certified Medical Assistant, and Patient Care Specialist at Oakstone Psychiatric Practice. With her extensive clinical support background and exceptional organizational leadership, Flor ensures that every patient and family receives a seamless, warm, and supportive experience from their very first interaction. Her dedication to compassionate service, efficient clinic administration, and thoughtful patient navigation makes her an invaluable pillar of the Oakstone care team.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-[#C5A059]/20 scroll-mt-24">
+        <h2 class="text-4xl md:text-5xl font-cinzel font-bold text-amber-100 mb-12 tracking-wide">Visit Our Office</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <!-- Location Info -->
+            <div class="flex gap-6 bg-espresso-card p-6 rounded-3xl border border-gold-subtle">
+                <div class="flex-shrink-0 w-14 h-14 rounded-2xl border border-[#C5A059]/40 flex items-center justify-center text-[#C5A059] bg-[#C5A059]/10">
+                    <i data-lucide="map-pin" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h4 class="text-xl font-cinzel font-bold text-amber-100 mb-2">Location</h4>
+                    <p class="text-amber-100/70 text-sm mb-3 leading-relaxed font-light">
+                        3435 South Demaree Ave, Ste C<br />
+                        Visalia, CA 93277
+                    </p>
+                    <a href="https://maps.app.goo.gl/g9SwMdTXxj4Ao9JH8" target="_blank" rel="noopener noreferrer" class="text-[#C5A059] font-cinzel text-xs uppercase tracking-widest flex items-center hover:underline">
+                        Get Directions <span class="ml-1 text-xs">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="flex gap-6 bg-espresso-card p-6 rounded-3xl border border-gold-subtle">
+                <div class="flex-shrink-0 w-14 h-14 rounded-2xl border border-[#C5A059]/40 flex items-center justify-center text-[#C5A059] bg-[#C5A059]/10">
+                    <i data-lucide="phone" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h4 class="text-xl font-cinzel font-bold text-amber-100 mb-2">Phone & Fax</h4>
+                    <p class="text-amber-100/70 text-sm leading-relaxed font-light">
+                        Phone: (559) 258-1644<br />
+                        Fax: (559) 258-1624
+                    </p>
+                </div>
+            </div>
+
+            <!-- Hours Info -->
+            <div class="flex gap-6 bg-espresso-card p-6 rounded-3xl border border-gold-subtle">
+                <div class="flex-shrink-0 w-14 h-14 rounded-2xl border border-[#C5A059]/40 flex items-center justify-center text-[#C5A059] bg-[#C5A059]/10">
+                    <i data-lucide="clock" class="w-6 h-6"></i>
+                </div>
+                <div>
+                    <h4 class="text-xl font-cinzel font-bold text-amber-100 mb-2">Office Hours</h4>
+                    <p class="text-amber-100/70 text-sm leading-relaxed font-light">
+                        Monday – Friday: 8:00 AM – 5:00 PM<br />
+                        Saturday – Sunday: Closed
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Office Images & Interactive Map Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+            <img 
+                src="Photos/logo-dark.jpg" 
+                alt="Oakstone Psychiatry Logo" 
+                class="w-full h-64 object-contain bg-espresso-card p-6 rounded-[2rem] border border-gold-subtle md:col-span-1 shadow-xl"
+                width="250"
+                height="250" 
+                onerror="this.onerror=null; this.src='Photos/logo.jpg';"
+            />
+            <img 
+                src="Photos/office-exterior-branding.jpg" 
+                alt="Oakstone Practice Front Window Graphic and Brick Facade" 
+                class="w-full h-64 object-cover rounded-[2rem] md:col-span-1 border border-gold-subtle shadow-xl brightness-90"
+                loading="lazy"
+                width="250"
+                height="250" 
+                onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=600';"
+            />
+            <div class="w-full h-64 md:col-span-2 rounded-[2rem] overflow-hidden shadow-2xl border border-gold-subtle">
+                <iframe 
+                    title="Oakstone Practice Map Location"
+                    src="https://maps.google.com/maps?q=Oakstone%20Psychiatric%20Practice%20Visalia%20CA&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; filter: contrast(1.1) brightness(0.9);" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Request Appointment & HIPAAtizer Form Section -->
+    <section id="request-appointment" class="bg-espresso-card relative overflow-hidden text-amber-100 py-20 lg:py-28 border-t border-gold-medium scroll-mt-20">
+        <!-- Tree Icon Overlay -->
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 md:w-[600px] md:h-[600px] text-[#C5A059]/5 pointer-events-none">
+            <path d="M12 22v-8" />
+            <path d="M12 14c-2.5-2.5-4-6-4-6s1.5 1 4 3c2.5-2 4-3 4-3s-1.5 3.5-4 6z" />
+            <path d="M12 14c-1.5-1.5-2.5-4-2.5-4s1 1 2.5 2c1.5-1 2.5-2 2.5-2s-1 2.5-2.5 4z" />
+            <path d="M12 22l-3-3" />
+            <path d="M12 22l3-3" />
+            <circle cx="12" cy="12" r="11" />
+        </svg>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12 lg:gap-24">
+            <div class="flex-1 text-center md:text-left">
+                <div class="inline-flex items-center gap-2 mb-3 px-3.5 py-1 rounded-full border border-[#C5A059]/40 bg-[#C5A059]/10">
+                    <span class="text-xs font-cinzel text-[#C5A059] uppercase tracking-widest">Get Started Today</span>
+                </div>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-cinzel text-amber-100 mb-6 leading-tight">
+                    Request Information & Services
+                </h2>
+                <p class="text-lg text-amber-100/75 max-w-md mx-auto md:mx-0 mb-8 leading-relaxed font-light">
+                    Ready to take the next step? Choose an option below to request an appointment or reach out with a general inquiry.
+                </p>
+                
+                <!-- Action Interactive Selection Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                    <button onclick="toggleHipaatizerForm('general')" id="btn-general" class="w-full sm:w-auto bg-[#C5A059] text-[#0D0B08] border border-[#C5A059] px-6 py-3.5 rounded-full font-cinzel font-bold text-xs uppercase tracking-widest transition-all text-center shadow-xl">
+                        General Information Request
+                    </button>
+                    <button onclick="toggleHipaatizerForm('appointment')" id="btn-appointment" class="w-full sm:w-auto bg-transparent text-amber-100 border border-[#C5A059]/50 px-6 py-3.5 rounded-full font-cinzel text-xs uppercase tracking-widest hover:bg-[#C5A059]/20 transition-all text-center">
+                        Request Appointment
+                    </button>
+                </div>
+            </div>
+
+            <!-- Dynamic HIPAAtizer Form Frame Column -->
+            <div class="w-full max-w-xl relative z-10 flex flex-col gap-4">
+                
+                <!-- 1. HIPAAtizer General Info Container -->
+                <div id="general-form-container" class="hidden w-full rounded-[2rem] overflow-hidden shadow-2xl bg-white p-3 text-gray-800 border border-gold-subtle animate-fadeIn">
+                    <div id="hipaatizer-general-target"></div>
+                </div>
+
+                <!-- 2. HIPAAtizer Request Appointment Container -->
+                <div id="appointment-form-container" class="hidden w-full rounded-[2rem] overflow-hidden shadow-2xl bg-white p-3 text-gray-800 border border-gold-subtle animate-fadeIn">
+                    <div id="hipaatizer-appointment-target"></div>
+                </div>
+                
+                <!-- Initial Helper Selection Box -->
+                <div id="form-placeholder-message" class="w-full text-center py-16 border-2 border-dashed border-[#C5A059]/30 rounded-[2rem] text-amber-100/60 px-6 bg-[#0D0B08]/50">
+                    <i data-lucide="form-input" class="w-12 h-12 mx-auto mb-3 opacity-60 text-[#C5A059]"></i>
+                    <p class="text-sm font-cinzel tracking-wider">Please select an option above to load the secure form.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#0A0806] py-12 text-center border-t border-[#C5A059]/20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex items-center justify-center gap-3 mb-4">
+                <img 
+                    src="Photos/logo-dark.jpg" 
+                    alt="Oakstone Psychiatry Logo" 
+                    class="h-12 w-auto opacity-90"
+                    width="120"
+                    height="40"
+                    onerror="this.style.display='none';"
+                >
+            </div>
+            <p class="text-amber-100/60 text-sm mb-2 font-light">
+                3435 South Demaree Ave, Ste C, Visalia, CA 93277 | Phone: (559) 258-1644
+            </p>
+            <p class="text-amber-100/40 text-xs font-cinzel tracking-wider">
+                © <span id="year"></span> Oakstone Psychiatric Practice. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Dynamic copyright year
+        document.getElementById('year').textContent = new Date().getFullYear();
+        
+        // Practice Overview Text Expand/Collapse Toggle
+        function toggleOverviewText() {
+            const extraText = document.getElementById('overview-expanded-text');
+            const toggleBtnText = document.getElementById('overview-toggle-text');
+            const toggleIcon = document.getElementById('overview-toggle-icon');
+
+            if (extraText.classList.contains('hidden')) {
+                extraText.classList.remove('hidden');
+                toggleBtnText.textContent = 'Show Less';
+                if (toggleIcon) toggleIcon.classList.add('rotate-180');
+            } else {
+                extraText.classList.add('hidden');
+                toggleBtnText.textContent = 'Read Full Overview';
+                if (toggleIcon) toggleIcon.classList.remove('rotate-180');
+            }
+        }
+
+        // Render Lucide icons
+        window.addEventListener('DOMContentLoaded', () => {
+            if (typeof lucide !== 'undefined') {
+                lucide.createIcons();
+            }
+        });
+
+        // Photo Lightbox Modal Logic
+        function openLightbox(imgSrc, captionText) {
+            const modal = document.getElementById('lightbox-modal');
+            const img = document.getElementById('lightbox-img');
+            const caption = document.getElementById('lightbox-caption');
+            
+            img.src = imgSrc;
+            caption.textContent = captionText;
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            const modal = document.getElementById('lightbox-modal');
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        // Tracks loaded status of HIPAAtizer forms to avoid re-injections
+        const loadedForms = {
+            general: false,
+            appointment: false
+        };
+
+        // Multi-Form Lazy Toggling
+        function toggleHipaatizerForm(formType) {
+            const generalWrap = document.getElementById('general-form-container');
+            const appointmentWrap = document.getElementById('appointment-form-container');
+            const placeholderMsg = document.getElementById('form-placeholder-message');
+            
+            const btnGeneral = document.getElementById('btn-general');
+            const btnAppointment = document.getElementById('btn-appointment');
+
+            placeholderMsg.classList.add('hidden');
+
+            if (formType === 'general') {
+                generalWrap.classList.remove('hidden');
+                appointmentWrap.classList.add('hidden');
+
+                btnGeneral.className = "w-full sm:w-auto bg-[#C5A059] text-[#0D0B08] border border-[#C5A059] px-6 py-3.5 rounded-full font-cinzel font-bold text-xs uppercase tracking-widest transition-all text-center shadow-xl";
+                btnAppointment.className = "w-full sm:w-auto bg-transparent text-amber-100 border border-[#C5A059]/50 px-6 py-3.5 rounded-full font-cinzel text-xs uppercase tracking-widest hover:bg-[#C5A059]/20 transition-all text-center";
+                
+                if (!loadedForms.general) {
+                    loadHipaatizerScript(
+                        "019f41b8-b15d-78cc-8990-184988977a8e", 
+                        "hipaatizer-general-target"
+                    );
+                    loadedForms.general = true;
+                }
+
+            } else if (formType === 'appointment') {
+                appointmentWrap.classList.remove('hidden');
+                generalWrap.classList.add('hidden');
+
+                btnAppointment.className = "w-full sm:w-auto bg-[#C5A059] text-[#0D0B08] border border-[#C5A059] px-6 py-3.5 rounded-full font-cinzel font-bold text-xs uppercase tracking-widest transition-all text-center shadow-xl";
+                btnGeneral.className = "w-full sm:w-auto bg-transparent text-amber-100 border border-[#C5A059]/50 px-6 py-3.5 rounded-full font-cinzel text-xs uppercase tracking-widest hover:bg-[#C5A059]/20 transition-all text-center";
+                
+                if (!loadedForms.appointment) {
+                    loadHipaatizerScript(
+                        "019f2e36-2d64-7ef5-ac81-a6fa6630aebd", 
+                        "hipaatizer-appointment-target"
+                    );
+                    loadedForms.appointment = true;
+                }
+            }
+        }
+
+        // Script injector for HIPAAtizer form
+        function loadHipaatizerScript(workflowId, targetId) {
+            const container = document.getElementById(targetId);
+            if (!container) return;
+
+            const script = document.createElement('script');
+            script.id = `${workflowId}-script`;
+            script.src = `https://app.hipaatizer.com/shared/hipaatizer-form-renderer.js?workflowId=${workflowId}`;
+            script.async = true;
+
+            script.onload = function() {
+                if (typeof Hipaatizer !== 'undefined') {
+                    new Hipaatizer(workflowId, false, "", false).render();
+                }
+            };
+
+            container.appendChild(script);
+        }
+
+        // Mobile Menu Toggling Logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const iconOpen = document.getElementById('menu-icon-open');
+        const iconClose = document.getElementById('menu-icon-close');
+        let isMenuOpen = false;
+
+        function toggleMenu() {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('hidden');
+                iconOpen.classList.add('hidden');
+                iconClose.classList.remove('hidden');
+            } else {
+                mobileMenu.classList.add('hidden');
+                iconOpen.classList.remove('hidden');
+                iconClose.classList.add('hidden');
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', toggleMenu);
+
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                if (isMenuOpen) toggleMenu();
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://www.oakstonepsychiatric.com/</loc>
+        <lastmod>2026-08-21</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        
+        <!-- Primary Brand Logo (Navigation) -->
+        <image:image>
+            <image:loc>https://www.oakstonepsychiatric.com/Photos/logo.jpg</image:loc>
+            <image:title>Oakstone Psychiatric Practice Logo</image:title>
+            <image:caption>Oakstone Psychiatric Practice official logo - Visalia, CA</image:caption>
+        </image:image>
+
+        <!-- Secondary Brand Logo (Container Emblem) -->
+        <image:image>
+            <image:loc>https://www.oakstonepsychiatric.com/Photos/logo-2.jpg</image:loc>
+            <image:title>Oakstone Psychiatric Practice Emblem</image:title>
+            <image:caption>Oakstone Psychiatric Practice circular tree emblem - Visalia, CA</image:caption>
+        </image:image>
+
+        <!-- Provider: Dr. Jaques -->
+        <image:image>
+            <image:loc>https://www.oakstonepsychiatric.com/Photos/cory-jaques.jpg</image:loc>
+            <image:title>Dr. Cory Daniel Jaques, M.D.</image:title>
+            <image:caption>Dr. Cory Daniel Jaques, M.D. - Board-Certified Psychiatrist in Visalia, CA</image:caption>
+        </image:image>
+
+        <!-- Provider: April Ortiz -->
+        <image:image>
+            <image:loc>https://www.oakstonepsychiatric.com/Photos/april-ortiz.jpg</image:loc>
+            <image:title>April Ortiz, PMHNP-BC</image:title>
+            <image:caption>April Ortiz, PMHNP-BC - Board-Certified Psychiatric Nurse Practitioner in Visalia, CA</image:caption>
+        </image:image>
+
+        <!-- Physical Location Asset -->
+        <image:image>
+            <image:loc>https://www.oakstonepsychiatric.com/Photos/office-front.jpg</image:loc>
+            <image:title>Oakstone Psychiatric Practice Clinic Front</image:title>
+            <image:caption>Oakstone Psychiatric Practice office location building at 3435 South Demaree Ave, Visalia, CA</image:caption>
+        </image:image>
+    </url>
+</urlset>

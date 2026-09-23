@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Allow: /Photos/
+Disallow: /*.zip$
+Disallow: /*.bak$
+Disallow: /*.config$
+
+Sitemap: https://www.oakstonepsychiatric.com/sitemap.xml
