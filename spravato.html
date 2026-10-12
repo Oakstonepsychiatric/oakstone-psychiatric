@@ -4,9 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spravato® Treatment | Oakstone Psychiatric Practice | Visalia, CA</title>
+  <meta name="description" content="Certified REMS Spravato® (esketamine) treatment center in Visalia, CA. Physician-supervised care for treatment-resistant depression by board-certified Dr. Cory Jaques.">
+  
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://app.hipaatizer.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <script>
@@ -71,7 +74,7 @@
       background: linear-gradient(90deg, transparent, rgba(239, 68, 68, 0.3), rgba(245, 158, 11, 0.4), rgba(16, 185, 129, 0.4), rgba(59, 130, 246, 0.35), rgba(168, 85, 247, 0.35), transparent);
     }
 
-    /* Crisp Emblem Rendering without cropping or overflow distortion */
+    /* Crisp Emblem Rendering */
     .logo-crest-focus {
       object-fit: contain;
       image-rendering: auto;
@@ -80,15 +83,6 @@
     .group:hover .logo-crest-focus {
       filter: drop-shadow(0 0 16px rgba(217, 188, 88, 0.45));
       transform: scale(1.025);
-    }
-
-    /* Subtle drift keyframe animation */
-    @keyframes subtleDrift {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-5px); }
-    }
-    .animate-drift {
-      animation: subtleDrift 7s ease-in-out infinite;
     }
 
     /* Custom scrollbar */
@@ -110,10 +104,10 @@
 <body class="bg-obsidian-950 text-stone-200 font-sans antialiased selection:bg-gold-500 selection:text-obsidian-950 min-h-screen flex flex-col">
 
   <!-- Top Utility Bar -->
-  <aside class="bg-obsidian-900/95 border-b border-gold-400/20 py-2.5 px-4 text-xs font-medium tracking-wider text-stone-300 relative z-50 backdrop-blur-sm">
+  <aside aria-label="Clinic Quick Information" class="bg-obsidian-900/95 border-b border-gold-400/20 py-2.5 px-4 text-xs font-medium tracking-wider text-stone-300 relative z-50 backdrop-blur-sm">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2.5">
       <div class="flex items-center flex-wrap gap-2.5 text-stone-400">
-        <a href="https://oakstonepsychiatric.com" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 hover:text-gold-300 transition-colors text-gold-400 font-semibold group">
+        <a href="index.html" class="flex items-center gap-1.5 hover:text-gold-300 transition-colors text-gold-400 font-semibold group">
           <svg class="w-3.5 h-3.5 transform group-hover:-translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
           oakstonepsychiatric.com
         </a>
@@ -125,7 +119,7 @@
       </div>
       <div class="flex items-center gap-4 text-xs">
         <span class="hidden md:inline-flex items-center gap-1.5 text-stone-300">
-          <span class="w-1.5 h-1.5 rounded-full bg-gold-400"></span>
+          <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse"></span>
           Physician-Supervised REMS Certified Center
         </span>
         <span class="text-gold-400/30 hidden md:inline">|</span>
@@ -139,27 +133,32 @@
   </aside>
 
   <!-- Main Navigation -->
-  <header class="sticky top-0 z-50 bg-obsidian-950/92 backdrop-blur-md border-b border-gold-500/20 transition-all duration-300">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 min-h-[116px] py-2.5 flex items-center justify-between gap-6">
+  <header class="sticky top-0 z-50 bg-obsidian-950/95 backdrop-blur-md border-b border-gold-500/20 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between gap-6">
       
       <!-- Brand Logo / Emblem -->
-      <a href="#" class="flex items-center gap-4 group shrink-0">
-        <div class="relative w-24 h-24 flex items-center justify-center shrink-0">
-          <img src="Photos/logo-2.jpg" alt="Oakstone Psychiatric Practice Logo" class="w-24 h-24 logo-crest-focus drop-shadow-[0_0_14px_rgba(217,188,88,0.28)]" onerror="this.src='https://placehold.co/100x100/0A130E/D9BC58?text=OPP'">
+      <a href="index.html" class="flex items-center gap-3.5 group shrink-0">
+        <div class="relative w-12 h-12 sm:w-14 sm:h-14 rounded-xl overflow-hidden bg-obsidian-900 border border-gold-400/30 flex items-center justify-center shrink-0">
+          <img 
+            src="Photos/logo-dark.jpg" 
+            alt="Oakstone Psychiatric Practice Logo" 
+            class="w-full h-full object-contain p-1 logo-crest-focus" 
+            onerror="this.onerror=null; this.src='Photos/logo.jpg';"
+          >
         </div>
         <div class="flex flex-col justify-center">
-          <span class="block font-cinzel text-xl sm:text-2xl tracking-[0.24em] text-stone-100 font-bold group-hover:text-gold-200 transition-colors leading-tight">OAKSTONE</span>
-          <span class="block font-cinzel text-[10px] sm:text-[11px] tracking-[0.32em] text-gold-400 font-medium uppercase mt-1 leading-tight">Psychiatric Practice</span>
+          <span class="block font-cinzel text-lg sm:text-xl tracking-[0.2em] text-stone-100 font-bold group-hover:text-gold-200 transition-colors leading-tight">OAKSTONE</span>
+          <span class="block font-cinzel text-[9px] sm:text-[10px] tracking-[0.28em] text-gold-400 font-medium uppercase mt-0.5 leading-tight">Psychiatric Practice</span>
         </div>
       </a>
 
       <!-- Desktop Navigation Links -->
-      <nav class="hidden lg:flex items-center gap-5 xl:gap-7 text-xs uppercase tracking-[0.18em] font-medium text-stone-300 font-sans">
-        <a href="#about-spravato" class="relative py-2 text-stone-300 hover:text-gold-200 transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-gold-400 after:transition-all hover:after:w-full">About Spravato</a>
-        <a href="#the-experience" class="relative py-2 text-stone-300 hover:text-gold-200 transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-gold-400 after:transition-all hover:after:w-full">The Experience</a>
-        <a href="#next-step" class="relative py-2 text-stone-300 hover:text-gold-200 transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-gold-400 after:transition-all hover:after:w-full">Next Steps</a>
-        <a href="#clinical-team" class="relative py-2 text-stone-300 hover:text-gold-200 transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-gold-400 after:transition-all hover:after:w-full">Dr. Cory Jaques</a>
-        <a href="#faq" class="relative py-2 text-stone-300 hover:text-gold-200 transition-colors after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-gold-400 after:transition-all hover:after:w-full">FAQ</a>
+      <nav class="hidden lg:flex items-center gap-6 xl:gap-8 text-xs uppercase tracking-[0.18em] font-medium text-stone-300 font-sans">
+        <a href="#about-spravato" class="relative py-2 text-stone-300 hover:text-gold-200 transition-colors">About Spravato</a>
+        <a href="#the-experience" class="relative py-2 text-stone-300 hover:text-gold-200 transition-colors">The Experience</a>
+        <a href="#next-step" class="relative py-2 text-stone-300 hover:text-gold-200 transition-colors">Next Steps</a>
+        <a href="#clinical-team" class="relative py-2 text-stone-300 hover:text-gold-200 transition-colors">Dr. Cory Jaques</a>
+        <a href="#faq" class="relative py-2 text-stone-300 hover:text-gold-200 transition-colors">FAQ</a>
       </nav>
 
       <!-- Header Action Buttons -->
@@ -185,7 +184,8 @@
       <a href="#next-step" class="mobile-link text-stone-200 hover:text-gold-300">Next Steps</a>
       <a href="#clinical-team" class="mobile-link text-stone-200 hover:text-gold-300">Dr. Cory Jaques, MD</a>
       <a href="#faq" class="mobile-link text-stone-200 hover:text-gold-300">Questions & Answers</a>
-      <div class="pt-3 border-t border-stone-800 flex flex-col gap-2">
+      <a href="index.html" class="mobile-link text-stone-400 hover:text-gold-300 pt-2 border-t border-stone-800">← Back to Oakstone Home</a>
+      <div class="pt-2 flex flex-col gap-2">
         <a href="#consultation" class="mobile-link text-center text-xs uppercase tracking-widest py-3 rounded-full bg-gold-400 text-obsidian-950 font-bold">
           Book Consultation
         </a>
@@ -195,39 +195,33 @@
 
   <main class="flex-grow">
     <!-- Hero Section -->
-    <section class="relative overflow-hidden doorway-light-bg py-20 lg:py-32 border-b border-gold-500/20">
+    <section class="relative overflow-hidden doorway-light-bg py-16 lg:py-24 border-b border-gold-500/20">
       
       <!-- Ambient Visual Elements: Light Shaft & Prism Sheen -->
       <div class="absolute inset-0 pointer-events-none overflow-hidden">
-        <!-- Doorway light beam simulation -->
         <div class="absolute -right-16 md:right-10 top-0 w-80 sm:w-[520px] h-[950px] light-shaft rotate-[18deg] opacity-65"></div>
         <div class="absolute right-32 top-10 w-28 h-[800px] bg-gradient-to-b from-gold-200/40 via-gold-400/10 to-transparent blur-md rotate-[16deg] opacity-70"></div>
-        
-        <!-- Floor Prism Refraction Line -->
         <div class="absolute bottom-10 right-0 w-3/4 sm:w-1/2 h-[3px] prism-line transform -rotate-3 opacity-70"></div>
-        <div class="absolute bottom-16 right-10 w-2/3 sm:w-1/3 h-[2px] prism-line transform -rotate-2 opacity-50"></div>
-
-        <!-- Glowing radial warmth -->
         <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-96 h-96 rounded-full bg-gold-500/10 blur-[120px]"></div>
       </div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
-          <!-- Left Column: Core Framing from Design Guides -->
-          <div class="lg:col-span-7 space-y-8 text-center lg:text-left">
+          <!-- Left Column -->
+          <div class="lg:col-span-7 space-y-7 text-center lg:text-left">
             
-            <!-- Prominent Hero Spravato Banner -->
-            <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-obsidian-900/95 via-obsidian-850/90 to-obsidian-900/95 border-2 border-gold-400/50 backdrop-blur-md shadow-gold-glow hover:border-gold-300 transition-all duration-300 group">
-              <span class="font-cinzel text-sm sm:text-base tracking-[0.28em] text-stone-100 font-bold uppercase flex items-center flex-wrap gap-1.5">
-                <span class="text-gold-300 drop-shadow-[0_0_12px_rgba(217,188,88,0.45)]">SPRAVATO®</span>
-                <span class="text-stone-300 font-medium text-xs sm:text-sm tracking-[0.2em]">(esketamine)</span>
-                <span class="text-gold-200 font-semibold text-xs sm:text-sm tracking-[0.24em]">TREATMENT</span>
+            <!-- Hero Spravato Pill Badge -->
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gradient-to-r from-obsidian-900/95 via-obsidian-850/90 to-obsidian-900/95 border border-gold-400/50 backdrop-blur-md shadow-gold-glow">
+              <span class="font-cinzel text-xs sm:text-sm tracking-[0.24em] text-stone-100 font-bold uppercase flex items-center flex-wrap gap-1.5">
+                <span class="text-gold-300">SPRAVATO®</span>
+                <span class="text-stone-300 font-normal">(ESKETAMINE)</span>
+                <span class="text-gold-200 font-medium">TREATMENT</span>
               </span>
-              <span class="text-thistle-300 text-sm sm:text-base group-hover:rotate-45 transition-transform duration-300 ml-1">✦</span>
+              <span class="text-thistle-300 text-xs sm:text-sm ml-1">✦</span>
             </div>
 
-            <!-- Main Heading matching design artwork -->
+            <!-- Main Heading -->
             <div class="space-y-4">
               <h1 class="font-playfair text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-normal text-stone-50 leading-[1.12] tracking-tight">
                 A Different <br>
@@ -243,24 +237,24 @@
             </div>
 
             <!-- Subtitle -->
-            <p class="text-stone-300 text-lg sm:text-xl font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p class="text-stone-300 text-base sm:text-lg font-light leading-relaxed max-w-2xl mx-auto lg:mx-0">
               For adults living with treatment-resistant depression, traditional medicines do not always illuminate the way. At Oakstone Psychiatric, <strong class="text-gold-200 font-normal">SPRAVATO® (esketamine)</strong> offers an innovative, FDA-approved biological approach to reconnect vital neural pathways.
             </p>
 
-            <!-- Motto in gold tracked caps from art -->
-            <div class="pt-2">
-              <p class="font-cinzel text-xs sm:text-sm tracking-[0.38em] text-gold-400 font-semibold uppercase">
-                Hope. Perspective. Possibility.
+            <!-- Motto -->
+            <div class="pt-1">
+              <p class="font-cinzel text-xs sm:text-sm tracking-[0.32em] text-gold-400 font-semibold uppercase">
+                HOPE. PERSPECTIVE. POSSIBILITY.
               </p>
             </div>
 
             <!-- Action Buttons -->
-            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <a href="#consultation" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 text-obsidian-950 font-bold text-sm tracking-wider uppercase shadow-gold-glow hover:brightness-110 active:scale-95 transition-all text-center">
-                Schedule a Consultation
+            <div class="pt-3 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+              <a href="#consultation" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 text-obsidian-950 font-bold text-xs sm:text-sm tracking-wider uppercase shadow-gold-glow hover:brightness-110 active:scale-95 transition-all text-center">
+                Schedule Consultation
               </a>
-              <a href="#the-experience" class="w-full sm:w-auto px-8 py-4 rounded-full border border-gold-400/40 text-stone-200 hover:text-gold-200 hover:border-gold-300 hover:bg-gold-500/10 text-sm tracking-wider uppercase font-semibold transition-all text-center">
-                The Experience
+              <a href="#the-experience" class="w-full sm:w-auto px-8 py-4 rounded-full border border-gold-400/40 text-stone-200 hover:text-gold-200 hover:border-gold-300 hover:bg-gold-500/10 text-xs sm:text-sm tracking-wider uppercase font-semibold transition-all text-center">
+                The Patient Experience
               </a>
             </div>
 
@@ -268,7 +262,7 @@
             <div class="pt-6 grid grid-cols-2 sm:grid-cols-3 gap-4 border-t border-stone-800/80 text-left">
               <div class="space-y-1">
                 <span class="text-gold-400 text-xs font-semibold tracking-wider uppercase block">FDA-Approved</span>
-                <p class="text-stone-400 text-xs">For Treatment-Resistant Major Depression (TRD)</p>
+                <p class="text-stone-400 text-xs">Treatment-Resistant Major Depression</p>
               </div>
               <div class="space-y-1">
                 <span class="text-gold-400 text-xs font-semibold tracking-wider uppercase block">Medical Director</span>
@@ -276,59 +270,77 @@
               </div>
               <div class="space-y-1 col-span-2 sm:col-span-1">
                 <span class="text-thistle-300 text-xs font-semibold tracking-wider uppercase block">Insurance Support</span>
-                <p class="text-stone-400 text-xs">Covered by most major commercial plans & Medicare</p>
+                <p class="text-stone-400 text-xs">Covered by major commercial plans & Medicare</p>
               </div>
             </div>
 
           </div>
 
-          <!-- Right Column: Auto-Scrolling Photo Gallery Showcase -->
+          <!-- Right Column: Clean Visual Image Carousel -->
           <div class="lg:col-span-5 relative w-full max-w-lg mx-auto">
-            <div class="rounded-2xl overflow-hidden border border-gold-400/35 shadow-2xl bg-obsidian-900 p-2 sm:p-2.5 relative group" id="heroGalleryCard">
+            <div class="rounded-[2.2rem] overflow-hidden border border-gold-400/35 shadow-2xl bg-obsidian-900 p-3 sm:p-4 relative group" id="heroGalleryCard">
               
-              <!-- Ambient golden glow backplate -->
-              <div class="absolute -inset-1 rounded-2xl bg-gradient-to-tr from-gold-400/30 via-transparent to-gold-500/20 blur-md pointer-events-none"></div>
+              <!-- Subtle top label inside card -->
+              <div class="flex items-center justify-between mb-3 px-1">
+                <span id="galleryBadge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-obsidian-950/90 border border-gold-400/40 text-[10px] font-cinzel text-gold-300 uppercase tracking-widest font-semibold shadow">
+                  <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse"></span>
+                  FDA-APPROVED
+                </span>
+                <span class="text-[10px] font-cinzel tracking-widest text-stone-400 uppercase">
+                  REMS Certified
+                </span>
+              </div>
 
-              <div class="relative rounded-xl overflow-hidden bg-obsidian-950 flex flex-col border border-gold-400/15">
+              <div class="relative rounded-2xl overflow-hidden bg-obsidian-950 flex flex-col border border-gold-400/20">
                 
-                <!-- Slide Viewport -->
-                <div class="relative w-full h-72 sm:h-80 md:h-96 overflow-hidden bg-obsidian-950" id="galleryViewport">
+                <!-- Slide Viewport (Pure Image Rendering) -->
+                <div class="relative w-full aspect-[4/3] overflow-hidden bg-obsidian-950" id="galleryViewport">
                   
-                  <!-- Slide 1 (Initial): Spravato Brand Artwork / Logo -->
+                  <!-- Slide 1: Spravato Artwork (Photos/logo-spravato.jpg) -->
                   <div class="gallery-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-100 z-10" data-index="0">
-                    <img src="Photos/logo-spravato.jpg" alt="SPRAVATO® Treatment Artwork" class="w-full h-full object-cover object-center" onerror="this.src='https://placehold.co/800x500/070C09/D9BC58?text=Spravato+Artwork'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/20 to-transparent"></div>
+                    <img 
+                      src="Photos/logo-spravato.jpg" 
+                      alt="SPRAVATO® (esketamine) Treatment Artwork" 
+                      class="w-full h-full object-cover object-center"
+                      loading="eager"
+                      onerror="this.onerror=null; this.src='Photos/logo-dark.jpg';"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950/70 via-transparent to-transparent pointer-events-none"></div>
                   </div>
 
-                  <!-- Slide 2: Dr. Cory Jaques, MD -->
+                  <!-- Slide 2: Therapy Observation Suite -->
                   <div class="gallery-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none z-0" data-index="1">
-                    <img src="Photos/cory-jaques.jpg" alt="Dr. Cory Jaques, MD - Medical Director" class="w-full h-full object-cover object-top" onerror="this.src='https://placehold.co/800x500/0B140F/D9BC58?text=Dr.+Cory+Jaques+MD'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/25 to-transparent"></div>
+                    <img 
+                      src="Photos/office-therapy-room.jpg" 
+                      alt="Private Visalia Therapy Suite" 
+                      class="w-full h-full object-cover object-center"
+                      loading="lazy"
+                      onerror="this.onerror=null; this.src='Photos/office-interior-moss.jpg';"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950/70 via-transparent to-transparent pointer-events-none"></div>
                   </div>
 
-                  <!-- Slide 3: Therapy Observation Suite -->
+                  <!-- Slide 3: Dr. Cory Jaques, MD -->
                   <div class="gallery-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none z-0" data-index="2">
-                    <img src="Photos/office-therapy-room.jpg" alt="Quiet, Private Visalia Therapy Suite" class="w-full h-full object-cover object-center" onerror="this.src='https://placehold.co/800x500/0F1A13/D9BC58?text=Therapy+Suite'">
-                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/20 to-transparent"></div>
-                  </div>
-
-                  <!-- Floating Top Badge Tag -->
-                  <div class="absolute top-3.5 left-3.5 z-20">
-                    <span id="galleryBadge" class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-obsidian-950/85 backdrop-blur-md border border-gold-400/40 text-[11px] font-cinzel text-gold-300 uppercase tracking-widest font-semibold shadow-lg">
-                      <span class="w-1.5 h-1.5 rounded-full bg-gold-400 animate-pulse"></span>
-                      FDA-Approved
-                    </span>
+                    <img 
+                      src="Photos/cory-jaques.jpg" 
+                      alt="Dr. Cory Jaques, MD - Medical Director" 
+                      class="w-full h-full object-cover object-top"
+                      loading="lazy"
+                      onerror="this.onerror=null; this.src='Photos/logo-dark.jpg';"
+                    >
+                    <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950/70 via-transparent to-transparent pointer-events-none"></div>
                   </div>
 
                   <!-- Prev / Next Navigation Arrows -->
-                  <button id="galleryPrevBtn" aria-label="Previous photo" class="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-obsidian-950/80 hover:bg-gold-500 hover:text-obsidian-950 text-gold-300 border border-gold-400/30 flex items-center justify-center backdrop-blur-sm transition-all shadow-lg active:scale-95">
+                  <button id="galleryPrevBtn" aria-label="Previous image" class="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-obsidian-950/85 hover:bg-gold-500 hover:text-obsidian-950 text-gold-300 border border-gold-400/40 flex items-center justify-center backdrop-blur-sm transition-all shadow-lg active:scale-95 cursor-pointer">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M15 19l-7-7 7-7"/></svg>
                   </button>
-                  <button id="galleryNextBtn" aria-label="Next photo" class="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-obsidian-950/80 hover:bg-gold-500 hover:text-obsidian-950 text-gold-300 border border-gold-400/30 flex items-center justify-center backdrop-blur-sm transition-all shadow-lg active:scale-95">
+                  <button id="galleryNextBtn" aria-label="Next image" class="absolute right-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-obsidian-950/85 hover:bg-gold-500 hover:text-obsidian-950 text-gold-300 border border-gold-400/40 flex items-center justify-center backdrop-blur-sm transition-all shadow-lg active:scale-95 cursor-pointer">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M9 5l7 7-7 7"/></svg>
                   </button>
 
-                  <!-- Pagination Dots on Image -->
+                  <!-- Pagination Dots -->
                   <div class="absolute bottom-3 right-4 z-20 flex items-center gap-1.5" id="galleryDots">
                     <button class="gallery-dot w-6 h-1.5 rounded-full bg-gold-400 transition-all duration-300" data-slide="0" aria-label="Slide 1"></button>
                     <button class="gallery-dot w-2 h-1.5 rounded-full bg-stone-600 hover:bg-stone-400 transition-all duration-300" data-slide="1" aria-label="Slide 2"></button>
@@ -337,13 +349,13 @@
 
                 </div>
 
-                <!-- Dynamic Slide Caption Bar -->
-                <div class="p-4 sm:p-5 bg-obsidian-900/95 backdrop-blur-md border-t border-stone-800/90 text-left min-h-[92px] flex flex-col justify-center">
-                  <div id="galleryCaptionTitle" class="font-playfair font-semibold text-gold-300 text-sm sm:text-base leading-snug transition-all duration-300">
+                <!-- Slide Caption Footer -->
+                <div class="p-4 bg-obsidian-900/95 border-t border-stone-800 text-left min-h-[76px] flex flex-col justify-center">
+                  <div id="galleryCaptionTitle" class="font-cinzel font-bold text-gold-300 text-xs sm:text-sm tracking-wider uppercase">
                     SPRAVATO® (esketamine) Program
                   </div>
-                  <div id="galleryCaptionDesc" class="text-xs text-stone-300 font-light mt-1 leading-relaxed transition-all duration-300">
-                    A different biological path forward targeting glutamate pathways for Treatment-Resistant Depression.
+                  <div id="galleryCaptionDesc" class="text-xs text-stone-300 font-light mt-1 leading-relaxed">
+                    Visalia REMS Certified Psychiatric Treatment Suite
                   </div>
                 </div>
 
@@ -356,7 +368,7 @@
     </section>
 
     <!-- About Spravato Section -->
-    <section id="about-spravato" class="py-24 bg-obsidian-900 relative">
+    <section id="about-spravato" class="py-20 bg-obsidian-900 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
@@ -412,7 +424,7 @@
     </section>
 
     <!-- The Experience Section -->
-    <section id="the-experience" class="py-24 bg-obsidian-950 relative border-t border-gold-500/15">
+    <section id="the-experience" class="py-20 bg-obsidian-950 relative border-t border-gold-500/15">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
@@ -431,7 +443,12 @@
         <div class="relative rounded-2xl overflow-hidden border border-gold-400/30 shadow-2xl bg-obsidian-900">
           <div class="grid grid-cols-1 lg:grid-cols-12 items-center">
             <div class="lg:col-span-7 relative h-72 sm:h-96 lg:h-[440px] overflow-hidden group">
-              <img src="Photos/office-therapy-room.jpg" alt="Oakstone Psychiatric Spravato Treatment Suite in Visalia, CA" class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out" onerror="this.src='https://placehold.co/800x500/0F1A13/D9BC58?text=Oakstone+Therapy+Suite'">
+              <img 
+                src="Photos/office-therapy-room.jpg" 
+                alt="Oakstone Psychiatric Spravato Treatment Suite in Visalia, CA" 
+                class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700 ease-out" 
+                onerror="this.onerror=null; this.src='Photos/office-interior-moss.jpg';"
+              >
               <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-transparent to-transparent lg:hidden"></div>
               <div class="absolute top-4 left-4 bg-obsidian-950/80 backdrop-blur-md px-3 py-1 rounded-full border border-gold-400/30 text-[11px] font-cinzel text-gold-300 uppercase tracking-widest">
                 Visalia Clinic Suite
@@ -447,7 +464,7 @@
                 <span class="italic text-gold-300">Observation Suites</span>
               </h3>
               <p class="text-stone-300 text-sm leading-relaxed">
-                Step into a serene environment tailored specifically for peaceful treatment. Featuring supportive plush leather recliners, warm Tiffany and ambient lamps, acoustic privacy screens, and soothing decor, our rooms are crafted to minimize sensory fatigue while our medical team quietly monitors your vitals.
+                Step into a serene environment tailored specifically for peaceful treatment. Featuring supportive plush leather recliners, warm ambient lighting, acoustic privacy screens, and soothing decor, our rooms are crafted to minimize sensory fatigue while our medical team quietly monitors your vitals.
               </p>
               <div class="grid grid-cols-2 gap-3 pt-2 text-xs text-stone-400">
                 <div class="flex items-center gap-2">
@@ -471,12 +488,11 @@
     </section>
 
     <!-- Could Spravato Be the Right Next Step Section -->
-    <section id="next-step" class="py-24 bg-obsidian-950 relative border-t border-stone-800">
+    <section id="next-step" class="py-20 bg-obsidian-950 relative border-t border-stone-800">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="bg-obsidian-900/90 rounded-2xl border border-gold-400/30 p-8 sm:p-12 md:p-16 shadow-2xl backdrop-blur relative overflow-hidden text-center space-y-6">
           
-          <!-- Ambient subtle gold glow behind card -->
           <div class="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-gold-500/10 rounded-full blur-[100px] pointer-events-none"></div>
 
           <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-gold-400/10 border border-gold-400/25 text-xs text-gold-300 uppercase tracking-widest font-semibold">
@@ -511,7 +527,7 @@
     </section>
 
     <!-- Clinical Team Section -->
-    <section id="clinical-team" class="py-24 bg-obsidian-900 relative border-t border-b border-gold-500/15">
+    <section id="clinical-team" class="py-20 bg-obsidian-900 relative border-t border-b border-gold-500/15">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
@@ -525,7 +541,12 @@
                 
                 <!-- Doctor Actual Photo -->
                 <div class="w-48 h-48 mx-auto rounded-2xl border-2 border-gold-400/60 p-1 bg-obsidian-900 shadow-gold-glow overflow-hidden group">
-                  <img src="Photos/cory-jaques.jpg" alt="Dr. Cory Jaques, MD - Oakstone Psychiatric Practice" class="w-full h-full object-cover object-top rounded-xl transform group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/300x300/0A130E/D9BC58?text=Dr.+Cory+Jaques+MD'">
+                  <img 
+                    src="Photos/cory-jaques.jpg" 
+                    alt="Dr. Cory Jaques, MD - Oakstone Psychiatric Practice" 
+                    class="w-full h-full object-cover object-top rounded-xl transform group-hover:scale-105 transition-transform duration-500" 
+                    onerror="this.onerror=null; this.src='Photos/logo-dark.jpg';"
+                  >
                 </div>
 
                 <div class="space-y-1">
@@ -553,48 +574,48 @@
             </div>
           </div>
 
-          <!-- Doctor Philosophy & Practice Narrative -->
-        <div class="lg:col-span-7 space-y-6">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-400/25 text-xs text-gold-300 uppercase tracking-widest font-semibold">
-            Compassionate Clinical Leadership
-          </div>
-          
-          <h2 class="font-playfair text-3xl sm:text-4xl text-stone-100 font-normal leading-tight">
-            A Physician-Led Practice <br>
-            <span class="italic text-gold-300">Dedicated to Restoring Hope</span>
-          </h2>
+          <!-- Doctor Philosophy Narrative -->
+          <div class="lg:col-span-7 space-y-6">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-400/25 text-xs text-gold-300 uppercase tracking-widest font-semibold">
+              Compassionate Clinical Leadership
+            </div>
+            
+            <h2 class="font-playfair text-3xl sm:text-4xl text-stone-100 font-normal leading-tight">
+              A Physician-Led Practice <br>
+              <span class="italic text-gold-300">Dedicated to Restoring Hope</span>
+            </h2>
 
-          <div class="space-y-4 text-stone-300 font-light text-sm sm:text-base leading-relaxed">
-            <p>
-              At Oakstone Psychiatric Practice, we understand that living with persistent depression takes an immense physical, emotional, and social toll. When multiple rounds of standard medications fail to lift the heavy weight of depression, patients often feel exhausted and abandoned by conventional medicine.
-            </p>
-            <p>
-              Under the medical direction of <strong class="text-stone-100 font-normal">Dr. Cory Jaques, MD</strong>, our clinic provides advanced interventional psychiatric options within a setting centered on clinical safety, patient dignity, and unhurried human connection.
-            </p>
-            <p>
-              We do not view Spravato as just a prescription—it is an integrated therapeutic protocol. We collaborate closely with your primary care provider, outpatient therapist, and family support systems to foster sustained healing.
-            </p>
-          </div>
+            <div class="space-y-4 text-stone-300 font-light text-sm sm:text-base leading-relaxed">
+              <p>
+                At Oakstone Psychiatric Practice, we understand that living with persistent depression takes an immense physical, emotional, and social toll. When multiple rounds of standard medications fail to lift the heavy weight of depression, patients often feel exhausted and abandoned by conventional medicine.
+              </p>
+              <p>
+                Under the medical direction of <strong class="text-stone-100 font-normal">Dr. Cory Jaques, MD</strong>, our clinic provides advanced interventional psychiatric options within a setting centered on clinical safety, patient dignity, and unhurried human connection.
+              </p>
+              <p>
+                We do not view Spravato as just a prescription—it is an integrated therapeutic protocol. We collaborate closely with your primary care provider, outpatient therapist, and family support systems to foster sustained healing.
+              </p>
+            </div>
 
-          <!-- Quote callout -->
-          <blockquote class="p-5 rounded-xl bg-obsidian-950 border-l-2 border-gold-400 text-sm text-stone-200 italic font-playfair leading-relaxed">
-            "Healing treatment-resistant depression requires both advanced neurobiology and deep human compassion. When traditional medications reach their limits, our goal is to open a new doorway forward."
-            <footer class="text-gold-400 font-cinzel text-xs uppercase tracking-wider not-italic mt-2">
-              — Dr. Cory Jaques, MD
-            </footer>
-          </blockquote>
+            <!-- Quote callout -->
+            <blockquote class="p-5 rounded-xl bg-obsidian-950 border-l-2 border-gold-400 text-sm text-stone-200 italic font-playfair leading-relaxed">
+              "Healing treatment-resistant depression requires both advanced neurobiology and deep human compassion. When traditional medications reach their limits, our goal is to open a new doorway forward."
+              <footer class="text-gold-400 font-cinzel text-xs uppercase tracking-wider not-italic mt-2">
+                — Dr. Cory Jaques, MD
+              </footer>
+            </blockquote>
+
+          </div>
 
         </div>
 
       </div>
+    </section>
 
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section id="faq" class="py-24 bg-obsidian-900 relative border-t border-stone-800">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 bg-obsidian-900 relative border-t border-stone-800">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          
         <div class="text-center space-y-4 mb-16">
           <p class="font-cinzel text-xs tracking-[0.25em] text-gold-400 uppercase font-semibold">Common Inquiries</p>
           <h2 class="font-playfair text-3xl sm:text-4xl text-stone-100 font-normal">
@@ -607,7 +628,7 @@
           
           <!-- FAQ 1 -->
           <div class="bg-obsidian-950 rounded-xl border border-stone-800 overflow-hidden transition-colors">
-            <button onclick="toggleFaq(1)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+            <button onclick="toggleFaq(1)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none cursor-pointer">
               <span class="font-cinzel text-sm sm:text-base text-stone-100 font-medium">How is Spravato different from IV ketamine infusions?</span>
               <span id="faqIcon-1" class="text-gold-400 text-lg transition-transform duration-300">+</span>
             </button>
@@ -618,7 +639,7 @@
 
           <!-- FAQ 2 -->
           <div class="bg-obsidian-950 rounded-xl border border-stone-800 overflow-hidden transition-colors">
-            <button onclick="toggleFaq(2)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+            <button onclick="toggleFaq(2)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none cursor-pointer">
               <span class="font-cinzel text-sm sm:text-base text-stone-100 font-medium">What will I feel during the 2-hour treatment session?</span>
               <span id="faqIcon-2" class="text-gold-400 text-lg transition-transform duration-300">+</span>
             </button>
@@ -629,7 +650,7 @@
 
           <!-- FAQ 3 -->
           <div class="bg-obsidian-950 rounded-xl border border-stone-800 overflow-hidden transition-colors">
-            <button onclick="toggleFaq(3)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+            <button onclick="toggleFaq(3)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none cursor-pointer">
               <span class="font-cinzel text-sm sm:text-base text-stone-100 font-medium">Why do I need a driver to take me home?</span>
               <span id="faqIcon-3" class="text-gold-400 text-lg transition-transform duration-300">+</span>
             </button>
@@ -640,7 +661,7 @@
 
           <!-- FAQ 4 -->
           <div class="bg-obsidian-950 rounded-xl border border-stone-800 overflow-hidden transition-colors">
-            <button onclick="toggleFaq(4)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+            <button onclick="toggleFaq(4)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none cursor-pointer">
               <span class="font-cinzel text-sm sm:text-base text-stone-100 font-medium">Do I stop taking my regular oral antidepressant?</span>
               <span id="faqIcon-4" class="text-gold-400 text-lg transition-transform duration-300">+</span>
             </button>
@@ -651,7 +672,7 @@
 
           <!-- FAQ 5 -->
           <div class="bg-obsidian-950 rounded-xl border border-stone-800 overflow-hidden transition-colors">
-            <button onclick="toggleFaq(5)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+            <button onclick="toggleFaq(5)" class="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none cursor-pointer">
               <span class="font-cinzel text-sm sm:text-base text-stone-100 font-medium">How quickly might I notice an improvement in my depression?</span>
               <span id="faqIcon-5" class="text-gold-400 text-lg transition-transform duration-300">+</span>
             </button>
@@ -666,9 +687,8 @@
     </section>
 
     <!-- Appointment Request / HIPAAtizer Form Section -->
-    <section id="consultation" class="py-24 bg-obsidian-950 relative border-t border-gold-500/20">
+    <section id="consultation" class="py-20 bg-obsidian-950 relative border-t border-gold-500/20">
       
-      <!-- Ambient light beam background behind form -->
       <div class="absolute inset-0 pointer-events-none overflow-hidden">
         <div class="absolute right-0 bottom-0 w-96 h-96 bg-gold-500/10 rounded-full blur-[140px]"></div>
       </div>
@@ -740,8 +760,13 @@
         <!-- Col 1: Brand -->
         <div class="space-y-4">
           <div class="flex items-center gap-3">
-            <div class="h-12 w-auto flex items-center">
-              <img src="Photos/logo-2.jpg" alt="Oakstone Psychiatric Practice" class="h-12 w-auto max-h-12 object-contain" onerror="this.src='https://placehold.co/100x50/0A130E/D9BC58?text=OPP'">
+            <div class="h-10 w-10 rounded-lg overflow-hidden bg-obsidian-900 border border-gold-400/30 flex items-center justify-center">
+              <img 
+                src="Photos/logo-dark.jpg" 
+                alt="Oakstone Psychiatric Practice" 
+                class="h-8 w-auto object-contain" 
+                onerror="this.onerror=null; this.src='Photos/logo.jpg';"
+              >
             </div>
             <div>
               <span class="block font-cinzel text-sm tracking-widest text-stone-100 font-semibold">OAKSTONE</span>
@@ -751,7 +776,7 @@
           <p class="text-stone-400 leading-relaxed">
             Physician-led psychiatric practice directed by Dr. Cory Jaques, MD. Providing cutting-edge interventional therapies with compassionate clinical care in Visalia, California.
           </p>
-          <a href="https://oakstonepsychiatric.com" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:text-gold-300 font-medium inline-flex items-center gap-1">
+          <a href="index.html" class="text-gold-400 hover:text-gold-300 font-medium inline-flex items-center gap-1">
             oakstonepsychiatric.com
             <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
           </a>
@@ -827,28 +852,28 @@
       });
 
       document.querySelectorAll('.mobile-link').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+        });
       });
-    });
-  }
+    }
 
-  // Auto-Scrolling Photo Gallery Controller
-  const galleryData = [
+    // Gallery Data matching clean artwork display
+    const galleryData = [
       {
         badge: "FDA-Approved",
         title: "SPRAVATO® (esketamine) Program",
-        desc: "A different biological path forward targeting glutamate pathways for Treatment-Resistant Depression."
-      },
-      {
-        badge: "Medical Director",
-        title: "Dr. Cory Jaques, MD — Board Certified",
-        desc: "Direct physician supervision and tailored treatment plans in our certified REMS healthcare center."
+        desc: "Visalia REMS Certified Psychiatric Treatment Suite"
       },
       {
         badge: "Visalia Suite",
         title: "Quiet, Private Visalia Therapy Suite",
         desc: "Designed with comfortable leather recliners, soothing lighting, and attentive clinical oversight."
+      },
+      {
+        badge: "Medical Director",
+        title: "Dr. Cory Jaques, MD — Board Certified",
+        desc: "Direct physician supervision and tailored treatment plans in our certified REMS healthcare center."
       }
     ];
 
@@ -876,7 +901,7 @@
         }
       });
 
-      // Update dots
+      // Update pagination dots
       dots.forEach((dot, i) => {
         if (i === currentSlide) {
           dot.className = "gallery-dot w-6 h-1.5 rounded-full bg-gold-400 transition-all duration-300";
@@ -912,7 +937,7 @@
 
     function startAutoScroll() {
       stopAutoScroll();
-      autoScrollInterval = setInterval(nextSlide, 4500); // Transitions every 4.5 seconds
+      autoScrollInterval = setInterval(nextSlide, 5000);
     }
 
     function stopAutoScroll() {
@@ -922,7 +947,6 @@
       }
     }
 
-    // Attach event listeners for buttons and dots
     const prevBtn = document.getElementById('galleryPrevBtn');
     const nextBtn = document.getElementById('galleryNextBtn');
     if (prevBtn) prevBtn.addEventListener('click', () => { prevSlide(); startAutoScroll(); });
@@ -936,7 +960,6 @@
       });
     });
 
-    // Pause on hover
     if (galleryCard) {
       galleryCard.addEventListener('mouseenter', stopAutoScroll);
       galleryCard.addEventListener('mouseleave', startAutoScroll);
@@ -944,7 +967,7 @@
       galleryCard.addEventListener('touchend', startAutoScroll, { passive: true });
     }
 
-    // Start slideshow on load
+    // Initialize slideshow
     startAutoScroll();
 
     // FAQ Accordion Toggle
@@ -955,7 +978,6 @@
 
       const isHidden = content.classList.contains('hidden');
 
-      // Close all other FAQs
       for (let i = 1; i <= 5; i++) {
         const otherContent = document.getElementById(`faqContent-${i}`);
         const otherIcon = document.getElementById(`faqIcon-${i}`);
