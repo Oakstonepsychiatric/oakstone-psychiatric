@@ -9,7 +9,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://app.hipaatizer.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <script>
@@ -83,6 +82,26 @@
     .group:hover .logo-crest-focus {
       filter: drop-shadow(0 0 16px rgba(217, 188, 88, 0.45));
       transform: scale(1.025);
+    }
+
+    /* Flowing Organic Dark Wood Grain Texture for Scheduling Card */
+    .bg-dark-wood {
+      background-color: #120A04;
+      background-image: 
+        radial-gradient(ellipse at 35% 15%, rgba(168, 112, 60, 0.24) 0%, transparent 65%),
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800'%3E%3Cfilter id='flowingGrain'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.004 0.035' numOctaves='5' result='noise'/%3E%3CfeColorMatrix type='matrix' values='0.22 0 0 0 0.12  0.14 0 0 0 0.07  0.07 0 0 0 0.03  0 0 0 0.28 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23flowingGrain)'/%3E%3C/svg%3E"),
+        repeating-radial-gradient(ellipse 140% 70% at 10% -20%, rgba(82, 50, 26, 0.45) 0px, rgba(16, 9, 4, 0.6) 2px, rgba(58, 35, 18, 0.38) 4px, rgba(10, 5, 2, 0.75) 6px),
+        repeating-radial-gradient(ellipse 110% 180% at 110% 120%, rgba(70, 42, 22, 0.38) 0px, transparent 2.5px, rgba(32, 18, 8, 0.45) 5px),
+        repeating-radial-gradient(ellipse 200% 90% at -30% 110%, rgba(60, 36, 18, 0.3) 0px, transparent 3px, rgba(18, 9, 4, 0.4) 6px),
+        linear-gradient(135deg, #1C120A 0%, #0E0803 55%, #180F08 100%);
+      box-shadow: inset 0 0 60px rgba(0, 0, 0, 0.92), 0 20px 35px -10px rgba(0, 0, 0, 0.85);
+    }
+
+    .border-gold-subtle {
+      border-color: rgba(197, 160, 89, 0.22);
+    }
+    .border-gold-medium {
+      border-color: rgba(197, 160, 89, 0.45);
     }
 
     /* Custom scrollbar */
@@ -166,8 +185,8 @@
         <a href="tel:5592581644" class="text-[11px] uppercase tracking-[0.16em] font-cinzel font-semibold px-4 py-2.5 rounded-full border border-gold-400/40 text-gold-300 hover:border-gold-300 hover:bg-gold-500/10 transition-all">
           (559) 258-1644
         </a>
-        <a href="#consultation" class="text-[11px] uppercase tracking-[0.18em] font-cinzel font-bold px-5 py-2.5 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 text-obsidian-950 shadow-gold-glow hover:brightness-110 active:scale-95 transition-all text-center">
-          Consultation
+        <a href="#request-appointment" class="text-[11px] uppercase tracking-[0.18em] font-cinzel font-bold px-5 py-2.5 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 text-obsidian-950 shadow-gold-glow hover:brightness-110 active:scale-95 transition-all text-center">
+          Request Appt
         </a>
       </div>
 
@@ -186,8 +205,8 @@
       <a href="#faq" class="mobile-link text-stone-200 hover:text-gold-300">Questions & Answers</a>
       <a href="index.html" class="mobile-link text-stone-400 hover:text-gold-300 pt-2 border-t border-stone-800">← Back to Oakstone Home</a>
       <div class="pt-2 flex flex-col gap-2">
-        <a href="#consultation" class="mobile-link text-center text-xs uppercase tracking-widest py-3 rounded-full bg-gold-400 text-obsidian-950 font-bold">
-          Book Consultation
+        <a href="#request-appointment" class="mobile-link text-center text-xs uppercase tracking-widest py-3 rounded-full bg-gold-400 text-obsidian-950 font-bold">
+          Request Appointment
         </a>
       </div>
     </div>
@@ -248,9 +267,9 @@
               </p>
             </div>
 
-            <!-- Action Buttons -->
+            <!-- Action Buttons: Both link smoothly to their destinations -->
             <div class="pt-3 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
-              <a href="#consultation" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 text-obsidian-950 font-bold text-xs sm:text-sm tracking-wider uppercase shadow-gold-glow hover:brightness-110 active:scale-95 transition-all text-center">
+              <a href="#request-appointment" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 text-obsidian-950 font-bold text-xs sm:text-sm tracking-wider uppercase shadow-gold-glow hover:brightness-110 active:scale-95 transition-all text-center">
                 Schedule Consultation
               </a>
               <a href="#the-experience" class="w-full sm:w-auto px-8 py-4 rounded-full border border-gold-400/40 text-stone-200 hover:text-gold-200 hover:border-gold-300 hover:bg-gold-500/10 text-xs sm:text-sm tracking-wider uppercase font-semibold transition-all text-center">
@@ -309,7 +328,7 @@
                   </div>
 
                   <!-- Slide 2: Dr. Cory Jaques, MD -->
-                  <div class="gallery-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none z-0" data-index="2">
+                  <div class="gallery-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none z-0" data-index="1">
                     <img 
                       src="Photos/cory-jaques.jpg" 
                       alt="Dr. Cory Jaques, MD - Medical Director" 
@@ -320,8 +339,8 @@
                     <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950/70 via-transparent to-transparent pointer-events-none"></div>
                   </div>
 
- <!-- Slide 3: Therapy Observation Suite -->
-                  <div class="gallery-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none z-0" data-index="1">
+                  <!-- Slide 3: Therapy Observation Suite -->
+                  <div class="gallery-slide absolute inset-0 transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none z-0" data-index="2">
                     <img 
                       src="Photos/office-therapy-room.jpg" 
                       alt="Private Visalia Therapy Suite" 
@@ -331,7 +350,7 @@
                     >
                     <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950/70 via-transparent to-transparent pointer-events-none"></div>
                   </div>
-                  
+
                   <!-- Prev / Next Navigation Arrows -->
                   <button id="galleryPrevBtn" aria-label="Previous image" class="absolute left-3 top-1/2 -translate-y-1/2 z-20 w-9 h-9 rounded-full bg-obsidian-950/85 hover:bg-gold-500 hover:text-obsidian-950 text-gold-300 border border-gold-400/40 flex items-center justify-center backdrop-blur-sm transition-all shadow-lg active:scale-95 cursor-pointer">
                     <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M15 19l-7-7 7-7"/></svg>
@@ -511,8 +530,8 @@
           </p>
 
           <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a href="#consultation" class="w-full sm:w-auto px-8 sm:px-10 py-4 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 text-obsidian-950 font-bold text-xs sm:text-sm tracking-wider uppercase shadow-gold-glow hover:brightness-110 active:scale-95 transition-all inline-flex items-center justify-center gap-2 group">
-              <span>Request a Consultation Appointment</span>
+            <a href="#request-appointment" class="w-full sm:w-auto px-8 sm:px-10 py-4 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 text-obsidian-950 font-bold text-xs sm:text-sm tracking-wider uppercase shadow-gold-glow hover:brightness-110 active:scale-95 transition-all inline-flex items-center justify-center gap-2 group">
+              <span>Request an Appointment</span>
               <svg class="w-4 h-4 transform group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </a>
           </div>
@@ -686,64 +705,125 @@
       </div>
     </section>
 
-    <!-- Appointment Request / HIPAAtizer Form Section -->
-    <section id="consultation" class="py-20 bg-obsidian-950 relative border-t border-gold-500/20">
+    <!-- Request Information & Appointments Section (Direct Phone Scheduling - Matching Index.html) -->
+    <section id="request-appointment" class="bg-obsidian-950 relative overflow-hidden text-amber-100 py-20 lg:py-28 border-t border-gold-medium scroll-mt-24">
       
-      <div class="absolute inset-0 pointer-events-none overflow-hidden">
-        <div class="absolute right-0 bottom-0 w-96 h-96 bg-gold-500/10 rounded-full blur-[140px]"></div>
-      </div>
+      <!-- Anchor alias to preserve #consultation link navigation -->
+      <span id="consultation" class="absolute -top-24"></span>
 
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+      <!-- Tree Icon Watermark Background Overlay -->
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="0.5" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 md:w-[600px] md:h-[600px] text-[#C5A059]/5 pointer-events-none">
+        <path d="M12 22v-8" />
+        <path d="M12 14c-2.5-2.5-4-6-4-6s1.5 1 4 3c2.5-2 4-3 4-3s-1.5 3.5-4 6z" />
+        <path d="M12 14c-1.5-1.5-2.5-4-2.5-4s1 1 2.5 2c1.5-1 2.5-2 2.5-2s-1 2.5-2.5 4z" />
+        <path d="M12 22l-3-3" />
+        <path d="M12 22l3-3" />
+        <circle cx="12" cy="12" r="11" />
+      </svg>
+
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         
-        <div class="text-center space-y-4 mb-12">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-gold-500/10 border border-gold-400/25 text-xs text-gold-300 uppercase tracking-widest font-semibold">
-            Confidential & HIPAA-Compliant
+        <!-- Left Column: Information & Direct Invitation -->
+        <div class="flex-1 text-center lg:text-left space-y-6">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full border border-[#C5A059]/40 bg-[#C5A059]/10">
+            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+            <span class="text-xs font-cinzel text-[#C5A059] uppercase tracking-widest font-semibold">Direct Clinical Scheduling</span>
           </div>
-          <h2 class="font-playfair text-3xl sm:text-5xl text-stone-100 font-normal">
-            Request a Consultation Appointment
+
+          <h2 class="text-4xl md:text-5xl lg:text-6xl font-cinzel text-amber-100 leading-tight">
+            Request Information &amp; Appointments
           </h2>
-          <p class="text-stone-300 font-light text-base max-w-xl mx-auto">
-            Connect with Dr. Cory Jaques and the clinical team at Oakstone Psychiatric Practice. Please complete the secure form below to request a Spravato consultation.
+
+          <p class="text-base sm:text-lg text-amber-100/80 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
+            Ready to take the next step? To request an initial psychiatric evaluation, schedule an appointment, or ask questions regarding insurance coverage and Spravato® REMS protocols, please call our Visalia office directly.
           </p>
-          <div class="flex items-center justify-center gap-6 pt-1 text-xs text-stone-400 flex-wrap">
-            <span class="flex items-center gap-1.5 text-gold-300">
-              <svg class="w-4 h-4 text-gold-400" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 1.944A11.954 11.954 0 012.166 5C2.056 5.649 2 6.319 2 7c0 5.225 3.34 9.67 8 11.317C14.66 16.67 18 12.225 18 7c0-.682-.057-1.35-.166-2.001A11.954 11.954 0 0110 1.944zM11 14a1 1 0 11-2 0 1 1 0 012 0zm0-7a1 1 0 10-2 0v3a1 1 0 102 0V7z" clip-rule="evenodd"/></svg>
-              HIPAA Compliant
-            </span>
-            <span class="text-stone-600">•</span>
-            <span>256-Bit SSL Encrypted</span>
-            <span class="text-stone-600">•</span>
-            <span>Direct Clinical Review</span>
+
+          <p class="text-sm text-amber-100/60 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
+            Our care coordination team is available Monday through Friday to personally assist you, verify your insurance benefits, explain what to expect, and schedule your appointment.
+          </p>
+
+          <!-- Action Call Button & Navigation Link -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+            <a href="tel:5592581644" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-[#C5A059] via-[#E6CA65] to-[#9A7B38] text-[#0D0B08] px-8 py-4 rounded-full font-cinzel font-bold text-xs sm:text-sm uppercase tracking-wider hover:brightness-110 active:scale-95 transition-all shadow-xl">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+              <span>Call (559) 258-1644</span>
+            </a>
+            <a href="index.html" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-transparent text-amber-200 border border-[#C5A059]/50 px-7 py-4 rounded-full font-cinzel text-xs uppercase tracking-widest hover:bg-[#C5A059]/10 transition-all">
+              <span>Main Practice</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </a>
           </div>
         </div>
 
-        <!-- HIPAAtizer Secure Form Card Container -->
-        <div class="bg-obsidian-900/90 rounded-2xl border border-gold-400/30 p-4 sm:p-8 md:p-10 shadow-2xl backdrop-blur relative overflow-hidden">
-          
-          <div id="hipaatizerFormWrapper" class="w-full min-h-[480px] rounded-xl bg-white/95 text-stone-900 p-2 sm:p-4 shadow-inner">
-            <script
-                id="01a0cf72-eb1a-7951-80f9-28d269ff7df2-script"
-                src="https://app.hipaatizer.com/shared/hipaatizer-form-renderer.js?workflowId=01a0cf72-eb1a-7951-80f9-28d269ff7df2"
-            ></script>
-            <script>
-                new Hipaatizer(
-                    "01a0cf72-eb1a-7951-80f9-28d269ff7df2",
-                    false,
-                    "",
-                    false,
-                ).render();
-            </script>
-          </div>
+        <!-- Right Column: Dedicated Care Coordination Card -->
+        <div class="w-full max-w-lg relative z-10">
+          <div class="bg-dark-wood rounded-[2.5rem] border border-gold-medium p-8 sm:p-10 shadow-2xl relative overflow-hidden space-y-6">
+            
+            <div class="flex items-center justify-between border-b border-gold-subtle pb-5">
+              <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-2xl bg-[#C5A059]/15 border border-[#C5A059]/30 flex items-center justify-center text-[#C5A059] shadow-md">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+                </div>
+                <div>
+                  <h3 class="font-cinzel text-lg text-amber-100 font-bold">Visalia Office</h3>
+                  <p class="text-xs font-cinzel text-[#C5A059] tracking-wider uppercase">Direct Care Team</p>
+                </div>
+              </div>
+              <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/30 text-[10px] font-cinzel text-emerald-300 uppercase tracking-widest font-semibold">
+                Accepting Patients
+              </span>
+            </div>
 
-          <!-- Direct Phone Assistance Footer -->
-          <div class="mt-6 pt-5 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-stone-400">
-            <p>Prefer to speak directly with our Visalia office coordinator?</p>
-            <a href="tel:5592581644" class="text-gold-300 hover:text-gold-200 font-semibold inline-flex items-center gap-1.5 transition-colors">
-              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
-              (559) 258-1644
-            </a>
-          </div>
+            <!-- Direct Contact Lines -->
+            <div class="space-y-4 text-sm text-amber-100/80">
+              <div class="flex items-start gap-3.5">
+                <svg class="w-5 h-5 text-[#C5A059] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"/></svg>
+                <div>
+                  <p class="text-xs text-amber-100/50 uppercase tracking-widest font-cinzel">Phone Inquiries &amp; Scheduling</p>
+                  <a href="tel:5592581644" class="text-base font-semibold text-amber-100 hover:text-[#C5A059] transition-colors">
+                    (559) 258-1644
+                  </a>
+                </div>
+              </div>
 
+              <div class="flex items-start gap-3.5">
+                <svg class="w-5 h-5 text-[#C5A059] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"/></svg>
+                <div>
+                  <p class="text-xs text-amber-100/50 uppercase tracking-widest font-cinzel">Physician Referrals &amp; Fax</p>
+                  <span class="text-sm font-medium text-amber-100/90">(559) 258-1624</span>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <svg class="w-5 h-5 text-[#C5A059] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <div>
+                  <p class="text-xs text-amber-100/50 uppercase tracking-widest font-cinzel">Office Hours</p>
+                  <p class="text-sm text-amber-100/90">Monday – Friday: 8:00 AM – 5:00 PM</p>
+                  <p class="text-xs text-amber-100/50">Saturday &amp; Sunday: Closed</p>
+                </div>
+              </div>
+
+              <div class="flex items-start gap-3.5">
+                <svg class="w-5 h-5 text-[#C5A059] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                <div>
+                  <p class="text-xs text-amber-100/50 uppercase tracking-widest font-cinzel">Location</p>
+                  <p class="text-sm text-amber-100/90">3435 South Demaree Ave, Ste C, Visalia, CA 93277</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Trust and Clinical Safety Notice -->
+            <div class="pt-4 border-t border-gold-subtle flex flex-col gap-2 text-xs text-amber-100/60 leading-relaxed">
+              <div class="flex items-center gap-2 text-[#C5A059]">
+                <svg class="w-4 h-4 text-[#C5A059]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                <span class="font-cinzel tracking-wider uppercase text-[11px] font-bold">Confidential &amp; Physician-Directed</span>
+              </div>
+              <p class="font-light">
+                Covered by most major commercial health insurance plans and Medicare. Please have your insurance card ready when calling to expedite benefits verification.
+              </p>
+            </div>
+
+          </div>
         </div>
 
       </div>
